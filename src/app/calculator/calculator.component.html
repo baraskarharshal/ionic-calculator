@@ -1,0 +1,111 @@
+<ion-header [translucent]="true">
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="layout">
+    <div class="workspace">
+      <div class="displayResult">
+        <div class="history-items"></div>
+        <div>{{displayResult}}</div>
+      </div>
+    </div>
+    <div class="buttonspace">
+      <div class="btn-round btn-greylight btn-ac" 
+        (mouseup)="onMouseUp('btn-ac')" 
+        (mousedown)="onMouseDown('btn-ac', 'AC')">
+        <div class="btn-text">AC</div>
+      </div>
+      <div class="btn-round btn-greylight btn-plus-minus"
+        (mouseup)="onMouseUp('btn-plus-minus')" 
+        (mousedown)="onMouseDown('btn-plus-minus', 'C')">
+        <div class="btn-text">C</div>
+      </div>
+      <div class="btn-round btn-greylight btn-percent"
+        (mouseup)="onMouseUp('btn-percent')" 
+        (mousedown)="onMouseDown('btn-percent', '%')">
+        <div class="btn-text">%</div>
+      </div>
+      <div class="btn-round btn-orange btn-div"
+        (mouseup)="onMouseUp('btn-div')" 
+        (mousedown)="onMouseDown('btn-div', '/')">
+        <div class="btn-text">÷</div>
+      </div>
+      <div class="btn-round btn-grey btn-seven"
+        (mouseup)="onMouseUp('btn-seven')" 
+        (mousedown)="onMouseDown('btn-seven', 7)">
+        <div class="btn-text">7</div>
+      </div>
+      <div class="btn-round btn-grey btn-eight"
+        (mouseup)="onMouseUp('btn-eight')" 
+        (mousedown)="onMouseDown('btn-eight', 8)">
+        <div class="btn-text">8</div>
+      </div>
+      <div class="btn-round btn-grey btn-nine"
+        (mouseup)="onMouseUp('btn-nine')" 
+        (mousedown)="onMouseDown('btn-nine', 9)">
+        <div class="btn-text">9</div>
+      </div>
+      <div class="btn-round btn-orange btn-mul"
+        (mouseup)="onMouseUp('btn-mul')" 
+        (mousedown)="onMouseDown('btn-mul', '*')">
+        <div class="btn-text">×</div>
+      </div>
+      <div class="btn-round btn-grey btn-four"
+        (mouseup)="onMouseUp('btn-four')" 
+        (mousedown)="onMouseDown('btn-four', 4)">
+        <div class="btn-text">4</div>
+      </div>
+      <div class="btn-round btn-grey btn-five"
+        (mouseup)="onMouseUp('btn-five')" 
+        (mousedown)="onMouseDown('btn-five', 5)">
+        <div class="btn-text">5</div>
+      </div>
+      <div class="btn-round btn-grey btn-six"
+        (mouseup)="onMouseUp('btn-six')" 
+        (mousedown)="onMouseDown('btn-six', 6)">
+        <div class="btn-text">6</div>
+      </div>
+      <div class="btn-round btn-orange btn-min"
+        (mouseup)="onMouseUp('btn-min')" 
+        (mousedown)="onMouseDown('btn-min', '-')">
+        <div class="btn-text">−</div>
+      </div>
+      <div class="btn-round btn-grey btn-one"
+        (mouseup)="onMouseUp('btn-one')" 
+        (mousedown)="onMouseDown('btn-one', 1)">
+        <div class="btn-text">1</div>
+      </div>
+      <div class="btn-round btn-grey btn-two"
+        (mouseup)="onMouseUp('btn-two')" 
+        (mousedown)="onMouseDown('btn-two', 2)">
+        <div class="btn-text">2</div>
+      </div>
+      <div class="btn-round btn-grey btn-three"
+        (mouseup)="onMouseUp('btn-three')" 
+        (mousedown)="onMouseDown('btn-three', 3)">
+        <div class="btn-text">3</div>
+      </div>
+      <div class="btn-round btn-orange btn-plus"
+        (mouseup)="onMouseUp('btn-plus')" 
+        (mousedown)="onMouseDown('btn-plus', '+')">
+        <div class="btn-text">+</div>
+      </div>
+      <div class="btn-round-big btn-grey btn-zero"
+        (mouseup)="onMouseUp('btn-zero')" 
+        (mousedown)="onMouseDown('btn-zero', 0)">
+        <div class="btn-text">0</div>
+      </div>
+      <div class="btn-round btn-grey btn-decimal"
+        (mouseup)="onMouseUp('btn-decimal')" 
+        (mousedown)="onMouseDown('btn-decimal', '.')">
+        <div class="btn-text">.</div>
+      </div>
+      <div class="btn-round btn-orange btn-equal"
+        (mouseup)="onMouseUp('btn-equal')" 
+        (mousedown)="onMouseDown('btn-equal', '=')">
+        <div class="btn-text">=</div>
+      </div>
+    </div>
+  </div>
+
+</ion-content>

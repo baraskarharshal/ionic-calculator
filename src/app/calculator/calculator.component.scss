@@ -1,0 +1,169 @@
+.layout {
+    height: 100vh;
+    background-color: black;
+    color: white;
+    font-size: 11vw;
+
+    .workspace {
+        height:35vh;
+        position: relative;
+
+        .displayResult {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            font-size: 16vw;
+            padding: 0 30px 0 30px;
+            padding-bottom: 10px;
+            max-width: 100vw;
+            max-height: 34vh;
+            text-align: end;
+            overflow-y: auto;
+
+            .history-items {
+                font-size: 9vw;
+            }
+
+            .divider {
+                color:grey;
+            }
+        }
+    }
+
+    .buttonspace{
+        height: 65vh;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        padding: 10px;
+        grid-gap: 2px;
+        overflow: auto;
+
+        .btn-text {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+        }
+
+        .btn-zero {
+            grid-column: 1 / 3;
+
+            .btn-text {
+                position: relative;
+                margin-left: 23px;
+            }
+        }
+
+        .btn-ac, .btn-plus-minus, .btn-percent {
+            color: black;
+            font-size:10vw;
+        }
+
+        .btn-orange {
+            background-color: orange;
+            position: relative;
+        }
+
+        .btn-grey {
+            background-color: #ffffff3b;
+            position: relative;
+        }
+
+        .btn-greylight {
+            background-color: grey;
+            position: relative;
+        }
+
+        .active-grey {
+            background: white;
+        }
+
+        .active-black {
+            background: grey;
+        }
+
+        .active-orange {
+            background: white;
+            color: orange;
+        }
+
+        .btn-round {
+            width: 23vw;
+            height: 11vh;
+            border-radius: 13vw;
+        }
+
+        .btn-round-big {
+            height: 11vh;
+            border-radius: 13vw;
+        }
+    }
+}
+
+@keyframes clickEffectOnGrey {
+    from {background: white;}
+    to {background: grey;}
+  }
+
+@keyframes clickEffectOnBlack {
+    from {
+        background: grey;
+    }
+    to {
+        background: rgba(255, 255, 255, 0.231372549);
+    }
+}
+
+@keyframes clickEffectOnOrange {
+    from {
+        background: white;
+        color:orange;
+    }
+    to {
+        background: orange;
+        color:white;
+    }
+}
+
+// landscape styles
+
+@media (min-width: 100px) and (orientation:landscape) {
+    .layout {
+        width: 100vw;
+        height: 100vh;
+        font-size: 6vw;
+        display: flex;
+    }
+
+    .layout .workspace {
+        height: 100vh;
+        width: 35vw;
+    }
+
+    .layout .workspace .displayResult {
+        font-size: 6vw;
+        max-height: 100vh;
+    }
+
+    .layout .buttonspace {
+        height: auto;
+        width: 65vw;
+    }
+
+    .layout .buttonspace .btn-round{
+        width: 15vw;
+        height: 18vh;
+    }
+
+    .layout .buttonspace .btn-round-big {
+        height: 18vh;
+    }
+
+    .layout .buttonspace .btn-ac,
+    .layout .buttonspace .btn-plus-minus,
+    .layout .buttonspace .btn-percent{
+        font-size: 6vw;
+    }
+  }
+
+
